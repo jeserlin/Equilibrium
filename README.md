@@ -28,9 +28,9 @@ Ans:
 ```javascript
 var answer = []
 for(var i = 0; i<5; i++) {
-	setTimeout(((i) => {
-		answer.push(i)
-	})(i), i)
+  setTimeout(((i) => {
+    answer.push(i)
+  })(i), i)
 }
 ```
 
