@@ -34,6 +34,7 @@ for(var i = 0; i<5; i++) {
 }
 ```
 
+
 2. Consider the following code (10)
 ```javascript
 const aObject = {a: 1, b: 2}
@@ -52,6 +53,7 @@ Ans:
 const cObject = Object.assign({}, aObject);
 ```
 
+
 3. Write a function it will output this (10)
 Greet('Hello')('John') ⇒ 'Hello John'
 Greet('Hi')('Dennis') ⇒ 'Hi Dennis'
@@ -65,9 +67,11 @@ const Greet = (greeting) => {
 }
 ```
 
+
 4. Name all life-cycles for React Component (5)
 
 Ans: Mounting, Updating, and Unmounting.
+
 
 5. list 5 functional component hooks, which one interests you most, why (10)
 
@@ -81,7 +85,8 @@ functional component hooks:
 
 `useEffect` interests the most, because before having `useEffect`, we need to deal with `componentDidMount`, `componentDidUpdate` and `componentWillUnmount`. It's earier to understand and reduce the complexity of the development.
 
-1. Consider the following Component (20)
+
+6. Consider the following Component (20)
 ```jsx
 const ButtonCounter = () => {
 
@@ -118,6 +123,7 @@ const ButtonCounter = () => {
 }
 ```
 
+
 7. Implement this Component (25)
 Each second, increase counter value by one. You can use class component or functional component
 ```javascript
@@ -141,6 +147,7 @@ const Counter = () => {
   );
 };
 ```
+
 
 8. Consider the following Component (10)
 ```jsx
