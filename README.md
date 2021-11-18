@@ -12,6 +12,7 @@ setTimeout(function() {
 ```
 
 (a) What is the answer?
+
 Ans:
 The `answer` will be as below in every milisecond:
 - []
@@ -22,6 +23,7 @@ The `answer` will be as below in every milisecond:
 - [5, 5, 5, 5, 5]
 
 (b) How to fix this function so answer is [0,1,2,3,4]
+
 Ans:
 ```javascript
 var answer = []
@@ -40,9 +42,11 @@ bObject.a = 999
 ```
 
 (a) `aObject` after line 3 is
+
 Ans: `aObject` is `{ a: 999, b: 2 }`.
 
 (b) make `cObject` which the value is a clone of `aObject`, and `cObject` is not reference to `aObject` or `bObject`
+
 Ans:
 ```javascript
 const cObject = Object.assign({}, aObject);
@@ -62,9 +66,11 @@ const Greet = (greeting) => {
 ```
 
 4. Name all life-cycles for React Component (5)
+
 Ans: Mounting, Updating, and Unmounting.
 
 5. list 5 functional component hooks, which one interests you most, why (10)
+
 Ans: 
 functional component hooks:
 - useState
@@ -75,7 +81,7 @@ functional component hooks:
 
 `useEffect` interests the most, because before having `useEffect`, we need to deal with `componentDidMount`, `componentDidUpdate` and `componentWillUnmount`. It's earier to understand and reduce the complexity of the development.
 
-6. Consider the following Component (20)
+1. Consider the following Component (20)
 ```jsx
 const ButtonCounter = () => {
 
@@ -94,6 +100,7 @@ const ButtonCounter = () => {
 }
 ```
 Explain what this function does. If you find any problem, state it and fix the component.
+
 Ans:
 When user clicks on the button, the couter will increase `1` each time.
 ```jsx
@@ -157,6 +164,7 @@ const Child = ({
 }
 ```
 Make `Child` component only re-render when `name` prop value changes.
+
 Ans:
 ```javascript
 const isNameEqual = (prevProps, nextProps) => prevProps.name === nextProps.name;
