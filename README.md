@@ -15,7 +15,6 @@ for (var i = 0; i < 5; i++) {
 
 Ans:
 The `answer` will be as below in every milisecond:
-- []
 - [5]
 - [5, 5]
 - [5, 5, 5]
