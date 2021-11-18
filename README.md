@@ -5,9 +5,9 @@
 ```javascript
 var answer = []
 for (var i = 0; i < 5; i++) {
-setTimeout(function() {
+  setTimeout(function() {
     answer.push(i)
-	}, i)
+  }, i)
 }
 ```
 
@@ -85,16 +85,15 @@ functional component hooks:
 ```jsx
 const ButtonCounter = () => {
 
-	const [count, setCount] = useState();
+  const [count, setCount] = useState();
+
   const handleClick = useCallback(() => {
     setCount(count+1)
   }, []);
 
   return (
-    <button
-      onClick={handleClick}
-    >
-    {count}
+    <button onClick={handleClick}>
+      {count}
     </button>
   )
 }
@@ -106,16 +105,14 @@ When user clicks on the button, the couter will increase `1` each time.
 ```jsx
 const ButtonCounter = () => {
 
-	const [count, setCount] = useState(0); // should have default value
+  const [count, setCount] = useState(0); // should have default value
   const handleClick = useCallback(() => {
     setCount((prevCount) => prevCount+1) // should update count with previous state
   }, []);
 
   return (
-    <button
-      onClick={handleClick}
-    >
-    {count}
+    <button onClick={handleClick}>
+      {count}
     </button>
   )
 }
@@ -152,14 +149,14 @@ const Child = ({
   friendCount
 }) => {
   return (
-		<div>
-			<div>
-				{name}
-			</div>
-			<div>
-				{friendCount}
-			</div>
-		</div>
+    <div>
+      <div>
+        {name}
+      </div>
+      <div>
+        {friendCount}
+      </div>
+    </div>
   )
 }
 ```
@@ -173,14 +170,14 @@ const Child = ({
   friendCount
 }) => {
   return (
-		<div>
-			<div>
-				{name}
-			</div>
-			<div>
-				{friendCount}
-			</div>
-		</div>
+    <div>
+      <div>
+        {name}
+      </div>
+      <div>
+        {friendCount}
+      </div>
+    </div>
   )
 };
 
